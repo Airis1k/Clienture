@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: LemonMilk;
+   src: url("/fonts/LEMONMILK-Medium.otf") format("opentype");
+}
+
+@font-face {
+   font-family: Cocogoose;
+   src: url("/fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
+}
+
+body {
+   background-color: #213b41;
+   color: #bffff6;
+   font-family: Cocogoose;
+   margin: 0;
+   padding: 0;
+}
+
+.content {
+   max-width: 1280px;
+   margin-left: auto;
+   margin-right: auto;
+
+   .logo-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      img.circle {
+         position: absolute;
+         top: -720px;
+         z-index: -1;
+      }
+
+      #text-logo {
+         margin-top: 144px;
+         margin-bottom: 448px;
+         max-width: 404px;
+      }
+   }
+
+   .text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p.contact-text {
+         margin: 34px 0;
+         text-align: center;
+         color: #fff;
+         font-size: 26px;
+      }
+
+      a {
+         color: #fff;
+         text-decoration: none;
+         font-size: 18px;
+         background-color: #6254ff;
+         padding: 14px 61px;
+         border-radius: 25px;
+      }
+   }
+}
+
+@media (max-width: 999px) {
+   .content .logo-wrap img.circle {
+      top: -520px;
+   }
+}
+
+@media (max-width: 749px) {
+   .content .logo-wrap img.circle {
+      top: -370px;
+   }
+}
+
+@media (max-width: 599px) {
+   .content .logo-wrap img.circle {
+      top: -220px;
+   }
+}
+
+@media (max-width: 399px) {
+   .content .logo-wrap img.circle {
+      display: none;
+   }
+}
