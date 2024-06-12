@@ -5,7 +5,15 @@
 }
 
 @font-face {
+  font-family: LemonMilkLight;
+  src: url("/fonts/LEMONMILK-Light.otf") format("opentype");
+}
+@font-face {
   font-family: LemonMilk;
+  src: url("/fonts/LEMONMILK-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: LemonMilkMedium;
   src: url("/fonts/LEMONMILK-Medium.otf") format("opentype");
 }
 @font-face {
@@ -22,8 +30,8 @@ body {
 
 .content {
   max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
+  padding: 0 2.5rem;
 }
 .content .logo-wrap {
   position: relative;
@@ -49,14 +57,14 @@ body {
   margin: 34px 0;
   text-align: center;
   color: #fff;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .content .text-wrap a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: #6254ff;
-  padding: 14px 61px;
+  padding: 0.777em 3.388em;
   border-radius: 25px;
 }
 
@@ -71,18 +79,19 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  width: 100%;
 }
 .content-2 .content p.description {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
-  line-height: 36px;
+  line-height: 2.25rem;
   max-width: 1040px;
 }
 .content-2 .content h2 {
   margin: 0;
-  line-height: 85px;
-  font-size: 60px;
+  line-height: 5.312rem;
+  font-size: 3.75rem;
 }
 .content-2 img.lines-1 {
   position: absolute;
@@ -90,9 +99,107 @@ body {
   z-index: -1;
 }
 
+.content-3 .content {
+  display: flex;
+}
+.content-3 .content .service-text {
+  width: 23%;
+}
+.content-3 .content .service-text h3 {
+  margin: 0;
+  font-family: LemonMilk;
+  letter-spacing: 2.6px;
+}
+.content-3 .content .service-text h3.main {
+  font-family: LemonMilkLight;
+  font-size: 40px;
+}
+.content-3 .content .service-text h3.main::after,
+.content-3 .content .service-text h3.lower:nth-of-type(3)::before,
+.content-3 .content .service-text h3.lower:nth-of-type(3)::after {
+  content: "";
+  display: block;
+  height: 153px;
+  width: 1px;
+  background-color: gray;
+  position: relative;
+  left: 15px;
+  margin: 1rem 0;
+}
+.content-3 .content .service-list::before {
+  content: "";
+  height: 1px;
+  background-color: gray;
+  position: absolute;
+  top: 1.687rem;
+  width: 93%;
+}
+.content-3 .content .service-list {
+  position: relative;
+  width: 77%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  padding-top: 11.25rem;
+}
+.content-3 .content .service-list .service-item {
+  text-decoration: none;
+  color: #bffff6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  justify-content: space-between;
+  padding: 2rem 0;
+  transition: box-shadow 1s;
+}
+.content-3 .content .service-list .service-item .service-img {
+  max-height: 70px;
+  max-width: 70px;
+}
+.content-3 .content .service-list .service-item p.text {
+  margin: 0;
+  text-align: center;
+}
+.content-3 .content .service-list .service-item:hover {
+  box-shadow: 0 0 3px #bffff6;
+}
+
 @media (max-width: 999px) {
   .content .logo-wrap img.circle {
     top: -520px;
+  }
+  .content-2 .content h2 {
+    line-height: 4rem;
+    font-size: 2.75rem;
+  }
+  .content-2 .content p.description {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  .content-3 .content {
+    flex-wrap: wrap;
+  }
+  .content-3 .content .service-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-3 .content .service-text h3.main::after,
+  .content-3 .content .service-text h3.lower:nth-of-type(3)::before,
+  .content-3 .content .service-text h3.lower:nth-of-type(3)::after {
+    height: 100px;
+    left: 6rem;
+  }
+  .content-3 .content .service-list {
+    width: 100%;
+    padding-top: 3.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+  .content-3 .content .service-list::before {
+    content: none;
   }
 }
 @media (max-width: 749px) {
