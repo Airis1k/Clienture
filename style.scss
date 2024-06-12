@@ -68,6 +68,45 @@ body {
    }
 }
 
+.content-2 {
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+   padding: 451px 0 257px;
+   position: relative;
+   // background-image: url("/assets/line-1.svg");
+   // background-repeat: no-repeat;
+   // background-attachment: local;
+   // background-size: 100% 100%;
+   // background-position: center 100px;
+
+   .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+
+      p.description {
+         color: #fff;
+         font-size: 20px;
+         margin: 0;
+         line-height: 36px;
+         max-width: 1040px;
+      }
+
+      h2 {
+         margin: 0;
+         line-height: 85px;
+         font-size: 60px;
+      }
+   }
+
+   img.lines-1 {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+   }
+}
+
 @media (max-width: 999px) {
    .content .logo-wrap img.circle {
       top: -520px;
