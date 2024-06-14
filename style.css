@@ -195,16 +195,65 @@ body {
   flex-direction: column;
   row-gap: 2.812rem;
 }
-.content-4 .spacing p.text {
+.content-4 p.text {
   font-size: 1.25rem;
   color: #fff;
   line-height: 40px;
   margin: 0;
+  max-width: 1085px;
 }
 .content-4 h2 {
   font-size: 2.95rem;
   margin-top: 2.687rem;
   margin-bottom: 0;
+}
+
+.content-5 {
+  padding-top: 40.812rem;
+  background-image: url(/assets/line-3.svg);
+  background-repeat: no-repeat;
+  background-size: 2346px;
+  background-position: top;
+}
+.content-5 .content {
+  display: flex;
+}
+.content-5 .content .form-wrap {
+  max-width: 788px;
+}
+.content-5 .content .form-wrap .header-wrap h2 {
+  font-size: 2.95rem;
+  line-height: 4rem;
+  margin: 0;
+}
+.content-5 .content .form-wrap .header-wrap p {
+  color: #fff;
+  line-height: 2rem;
+  margin: 3.375rem 0;
+  max-width: 600px;
+}
+.content-5 .content .form-wrap form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.687rem;
+}
+.content-5 .content .form-wrap form .form-element {
+  padding: 1.2em 4em;
+  border-radius: 25px;
+  border: 0;
+  font-family: Cocogoose;
+}
+.content-5 .content .form-wrap form textarea.form-element {
+  min-height: 186px;
+}
+.content-5 .content .img-wrap {
+  width: calc(100% - 788px);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.content-5 .content .img-wrap .spaceship {
+  max-width: 317px;
 }
 
 @media (max-width: 999px) {

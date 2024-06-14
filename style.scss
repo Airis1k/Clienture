@@ -223,19 +223,79 @@ body {
       display: flex;
       flex-direction: column;
       row-gap: 2.812rem;
+   }
 
-      p.text {
-         font-size: 1.25rem;
-         color: #fff;
-         line-height: 40px;
-         margin: 0;
-      }
+   p.text {
+      font-size: 1.25rem;
+      color: #fff;
+      line-height: 40px;
+      margin: 0;
+      max-width: 1085px;
    }
 
    h2 {
       font-size: 2.95rem;
       margin-top: 2.687rem;
       margin-bottom: 0;
+   }
+}
+
+.content-5 {
+   padding-top: 40.812rem;
+   background-image: url(/assets/line-3.svg);
+   background-repeat: no-repeat;
+   background-size: 2346px;
+   background-position: top;
+
+   .content {
+      display: flex;
+
+      .form-wrap {
+         max-width: 788px;
+
+         .header-wrap {
+            h2 {
+               font-size: 2.95rem;
+               line-height: 4rem;
+               margin: 0;
+            }
+
+            p {
+               color: #fff;
+               line-height: 2rem;
+               margin: 3.375rem 0;
+               max-width: 600px;
+            }
+         }
+
+         form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.687rem;
+
+            .form-element {
+               padding: 1.2em 4em;
+               border-radius: 25px;
+               border: 0;
+               font-family: Cocogoose;
+            }
+
+            textarea.form-element {
+               min-height: 186px;
+            }
+         }
+      }
+
+      .img-wrap {
+         width: calc(100% - 788px);
+         display: flex;
+         justify-content: end;
+         align-items: end;
+
+         .spaceship {
+            max-width: 317px;
+         }
+      }
    }
 }
 
