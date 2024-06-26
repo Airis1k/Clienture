@@ -18,54 +18,75 @@
 }
 @font-face {
   font-family: Cocogoose;
+  src: url("/fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: CocogooseLight;
   src: url("/fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
 body {
   background-color: #213b41;
   color: #bffff6;
-  font-family: Cocogoose;
+  font-family: CocogooseLight;
   margin: 0;
+  padding: 0;
+}
+
+header .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0;
 }
 
 .content {
   max-width: 1280px;
   margin-inline: auto;
-  padding: 0 2.5rem;
+  padding: 0 7.5rem;
 }
 .content .logo-wrap {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 }
 .content .logo-wrap img.circle {
   position: absolute;
-  top: -720px;
+  top: -42.5rem;
   z-index: -1;
+  max-width: 1000px;
 }
 .content .logo-wrap #text-logo {
-  margin-top: 144px;
-  margin-bottom: 448px;
-  max-width: 404px;
+  max-width: 330px;
 }
 .content .text-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
+  padding-top: 10rem;
 }
-.content .text-wrap p.contact-text {
+.content .text-wrap .innovate-text {
+  max-width: 900px;
+}
+.content .text-wrap .lower-text-wrap {
+  width: 100%;
+  text-align: center;
+}
+.content .text-wrap .lower-text-wrap p.contact-text {
   margin: 34px 0;
   text-align: center;
   color: #fff;
-  font-size: 1.625rem;
+  font-size: 1.425rem;
 }
-.content .text-wrap a {
+.content .text-wrap .lower-text-wrap a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 0.925rem;
   background-color: #6254ff;
   padding: 0.777em 3.388em;
   border-radius: 25px;
+  display: inline-block;
 }
 
 .content-2 {
@@ -76,7 +97,7 @@ body {
   position: relative;
   background-image: url(/assets/line-1.svg);
   background-repeat: no-repeat;
-  background-size: 2346px;
+  background-size: 1690px;
   background-position: bottom;
 }
 .content-2 .content {
@@ -87,15 +108,17 @@ body {
 }
 .content-2 .content p.description {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   margin: 0;
   line-height: 2.25rem;
-  max-width: 1040px;
+  max-width: 640px;
 }
 .content-2 .content h2 {
   margin: 0;
   line-height: 5.312rem;
   font-size: 3.75rem;
+  font-family: Cocogoose;
+  font-weight: 100;
 }
 .content-2 img.lines-1 {
   position: absolute;
@@ -241,7 +264,7 @@ body {
   padding: 1.2em 4em;
   border-radius: 25px;
   border: 0;
-  font-family: Cocogoose;
+  font-family: CocogooseLight;
 }
 .content-5 .content .form-wrap form textarea.form-element {
   min-height: 186px;

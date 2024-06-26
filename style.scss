@@ -21,61 +21,89 @@
 
 @font-face {
    font-family: Cocogoose;
+   src: url("/fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: CocogooseLight;
    src: url("/fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
 
 body {
    background-color: #213b41;
    color: #bffff6;
-   font-family: Cocogoose;
+   font-family: CocogooseLight;
    margin: 0;
    padding: 0;
+}
+
+header {
+   // height: 100vh;
+
+   .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+   }
 }
 
 .content {
    max-width: 1280px;
    margin-inline: auto;
-   padding: 0 2.5rem;
-   // margin-left: auto;
-   // margin-right: auto;
+   padding: 0 7.5rem;
 
    .logo-wrap {
       position: relative;
       display: flex;
       justify-content: center;
+      margin-top: 4rem;
 
       img.circle {
          position: absolute;
-         top: -720px;
+         top: -42.5rem;
          z-index: -1;
+         max-width: 1000px;
       }
 
       #text-logo {
-         margin-top: 144px;
-         margin-bottom: 448px;
-         max-width: 404px;
+         // margin-top: 144px;
+         // margin-bottom: 6.25rem;
+         max-width: 330px;
       }
    }
 
    .text-wrap {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: end;
+      padding-top: 10rem;
 
-      p.contact-text {
-         margin: 34px 0;
-         text-align: center;
-         color: #fff;
-         font-size: 1.625rem;
+      .innovate-text {
+         max-width: 900px;
       }
 
-      a {
-         color: #fff;
-         text-decoration: none;
-         font-size: 1.125rem;
-         background-color: #6254ff;
-         padding: 0.777em 3.388em;
-         border-radius: 25px;
+      .lower-text-wrap {
+         width: 100%;
+         text-align: center;
+
+         p.contact-text {
+            margin: 34px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 1.425rem;
+         }
+
+         a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.925rem;
+            background-color: #6254ff;
+            padding: 0.777em 3.388em;
+            border-radius: 25px;
+            display: inline-block;
+         }
       }
    }
 }
@@ -88,7 +116,7 @@ body {
    position: relative;
    background-image: url(/assets/line-1.svg);
    background-repeat: no-repeat;
-   background-size: 2346px;
+   background-size: 1690px;
    background-position: bottom;
 
    .content {
@@ -99,16 +127,18 @@ body {
 
       p.description {
          color: #fff;
-         font-size: 1.25rem;
+         font-size: 1.05rem;
          margin: 0;
          line-height: 2.25rem;
-         max-width: 1040px;
+         max-width: 640px;
       }
 
       h2 {
          margin: 0;
          line-height: 5.312rem;
          font-size: 3.75rem;
+         font-family: Cocogoose;
+         font-weight: 100;
       }
    }
 
@@ -277,7 +307,7 @@ body {
                padding: 1.2em 4em;
                border-radius: 25px;
                border: 0;
-               font-family: Cocogoose;
+               font-family: CocogooseLight;
             }
 
             textarea.form-element {
