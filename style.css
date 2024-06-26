@@ -24,6 +24,16 @@
   font-family: CocogooseLight;
   src: url("/fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
+.purple-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.925rem;
+  background-color: #6254ff;
+  padding: 0.777em 3.388em;
+  border-radius: 25px;
+  display: inline-block;
+}
+
 body {
   background-color: #213b41;
   color: #bffff6;
@@ -43,7 +53,7 @@ header .content {
 .content {
   max-width: 1280px;
   margin-inline: auto;
-  padding: 0 7.5rem;
+  padding: 0 0 0 7.5rem;
 }
 .content .logo-wrap {
   position: relative;
@@ -79,21 +89,12 @@ header .content {
   color: #fff;
   font-size: 1.425rem;
 }
-.content .text-wrap .lower-text-wrap a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.925rem;
-  background-color: #6254ff;
-  padding: 0.777em 3.388em;
-  border-radius: 25px;
-  display: inline-block;
-}
 
 .content-2 {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding: 451px 0 12.5rem;
+  padding: 25rem 0 8.5rem;
   position: relative;
   background-image: url(/assets/line-1.svg);
   background-repeat: no-repeat;
@@ -103,7 +104,7 @@ header .content {
 .content-2 .content {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 1.875rem;
   width: 100%;
 }
 .content-2 .content p.description {
@@ -115,8 +116,8 @@ header .content {
 }
 .content-2 .content h2 {
   margin: 0;
-  line-height: 5.312rem;
-  font-size: 3.75rem;
+  line-height: 3.812rem;
+  font-size: 3rem;
   font-family: Cocogoose;
   font-weight: 100;
 }
@@ -128,12 +129,13 @@ header .content {
 
 .content-3 {
   margin-top: 4.687rem;
+  margin-bottom: 4rem;
 }
 .content-3 .content {
   display: flex;
 }
 .content-3 .content .service-text {
-  width: 23%;
+  width: 20%;
 }
 .content-3 .content .service-text h3 {
   margin: 0;
@@ -141,36 +143,38 @@ header .content {
   letter-spacing: 2.6px;
 }
 .content-3 .content .service-text h3.main {
-  font-family: LemonMilkLight;
-  font-size: 40px;
+  font-family: LemonMilk;
+  font-size: 2rem;
 }
 .content-3 .content .service-text h3.main::after,
 .content-3 .content .service-text h3.lower:nth-of-type(3)::before,
 .content-3 .content .service-text h3.lower:nth-of-type(3)::after {
   content: "";
   display: block;
-  height: 153px;
+  height: 120px;
   width: 1px;
-  background-color: #4f4f4f;
+  background-color: #646464;
   position: relative;
   left: 15px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .content-3 .content .service-list::before {
   content: "";
   height: 1px;
-  background-color: #4f4f4f;
+  background-color: #797979;
   position: absolute;
-  top: 1.687rem;
-  width: 93%;
+  top: 1.387rem;
+  width: 95%;
 }
 .content-3 .content .service-list {
   position: relative;
-  width: 77%;
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem;
-  padding-top: 11.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  row-gap: 1.5rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  padding-top: 9.25rem;
 }
 .content-3 .content .service-list .service-item {
   text-decoration: none;
@@ -196,22 +200,24 @@ header .content {
 }
 
 .content-4 {
-  padding-top: 21.937rem;
+  padding-top: 15rem;
   background-image: url(/assets/line-2.svg);
   background-repeat: no-repeat;
-  background-size: 2346px;
+  background-size: 1690px;
   background-position: top;
 }
 .content-4 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 3px;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
+  font-family: "LemonMilk";
 }
 .content-4 h4.paragraph-header {
-  font-size: 1.562rem;
+  font-size: 1.17rem;
   letter-spacing: 3px;
   margin-top: 4.687rem;
-  margin-bottom: 2.812rem;
+  margin-bottom: 1.8rem;
+  font-family: "LemonMilk";
 }
 .content-4 .spacing {
   display: flex;
@@ -219,23 +225,25 @@ header .content {
   row-gap: 2.812rem;
 }
 .content-4 p.text {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   color: #fff;
-  line-height: 40px;
+  line-height: 2.25rem;
   margin: 0;
-  max-width: 1085px;
+  max-width: 985px;
 }
 .content-4 h2 {
   font-size: 2.95rem;
   margin-top: 2.687rem;
   margin-bottom: 0;
+  font-family: "Cocogoose";
+  font-weight: 100;
 }
 
 .content-5 {
-  padding-top: 40.812rem;
+  padding-top: 29rem;
   background-image: url(/assets/line-3.svg);
   background-repeat: no-repeat;
-  background-size: 2346px;
+  background-size: 1690px;
   background-position: top;
 }
 .content-5 .content {
@@ -245,51 +253,78 @@ header .content {
   max-width: 788px;
 }
 .content-5 .content .form-wrap .header-wrap h2 {
-  font-size: 2.95rem;
+  font-size: 3rem;
   line-height: 4rem;
   margin: 0;
+  font-family: "Cocogoose";
+  font-weight: 100;
 }
 .content-5 .content .form-wrap .header-wrap p {
   color: #fff;
   line-height: 2rem;
-  margin: 3.375rem 0;
-  max-width: 600px;
+  margin: 1.5rem 0 2.3rem;
+  max-width: 640px;
+  font-size: 1.05rem;
 }
 .content-5 .content .form-wrap form {
   display: flex;
   flex-direction: column;
   row-gap: 0.687rem;
+  width: 83%;
 }
 .content-5 .content .form-wrap form .form-element {
-  padding: 1.2em 4em;
+  padding: 1em 4em;
   border-radius: 25px;
   border: 0;
-  font-family: CocogooseLight;
+  font-family: "CocogooseLight";
+  background-color: #dcfffa;
 }
 .content-5 .content .form-wrap form textarea.form-element {
-  min-height: 186px;
+  min-height: 150px;
+  resize: vertical;
+}
+.content-5 .content .form-wrap form .btn-wrap {
+  margin-top: 2.5rem;
+}
+.content-5 .content .form-wrap form .btn-wrap .purple-btn {
+  font-family: "CocogooseLight";
+  border: 0;
 }
 .content-5 .content .img-wrap {
   width: calc(100% - 788px);
   display: flex;
-  justify-content: end;
   align-items: end;
 }
 .content-5 .content .img-wrap .spaceship {
-  max-width: 317px;
+  max-width: 260px;
+  margin-bottom: 5.25rem;
 }
 
-@media (max-width: 999px) {
-  .content .logo-wrap img.circle {
-    top: -520px;
+@media (max-width: 1024px) {
+  .content {
+    padding: 0 3rem;
   }
-  .content-2 .content h2 {
-    line-height: 4rem;
-    font-size: 2.75rem;
+  .content-3 .content .service-text {
+    width: 30%;
+  }
+  .content-3 .content .service-list {
+    width: 70%;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .content .logo-wrap img.circle {
+    top: -27rem;
+  }
+  .content .text-wrap .innovate-text {
+    max-width: 550px;
+  }
+  .content .text-wrap .lower-text-wrap p.contact-text {
+    font-size: 1rem;
   }
   .content-2 .content p.description {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1rem;
   }
   .content-3 .content {
     flex-wrap: wrap;
@@ -300,30 +335,22 @@ header .content {
     flex-direction: column;
     align-items: center;
   }
-  .content-3 .content .service-text h3.main::after,
+  .content-3 .content .service-text h3.main::after {
+    left: 5rem;
+  }
   .content-3 .content .service-text h3.lower:nth-of-type(3)::before,
   .content-3 .content .service-text h3.lower:nth-of-type(3)::after {
-    height: 100px;
     left: 6rem;
-  }
-  .content-3 .content .service-list {
-    width: 100%;
-    padding-top: 3.25rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
   }
   .content-3 .content .service-list::before {
     content: none;
   }
-}
-@media (max-width: 749px) {
-  .content .logo-wrap img.circle {
-    top: -370px;
+  .content-3 .content .service-list {
+    width: 100%;
+    padding-top: 3rem;
   }
-}
-@media (max-width: 599px) {
-  .content .logo-wrap img.circle {
-    top: -220px;
+  .content-4 .content p.text {
+    font-size: 1rem;
   }
 }
 @media (max-width: 399px) {
