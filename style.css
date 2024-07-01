@@ -68,13 +68,13 @@ header .content {
   max-width: 1000px;
 }
 .content .logo-wrap #text-logo {
-  max-width: 330px;
+  max-width: 380px;
 }
 .content .text-wrap {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 .content .text-wrap .innovate-text {
   max-width: 900px;
@@ -98,7 +98,7 @@ header .content {
   position: relative;
   background-image: url(./assets/line-1.svg);
   background-repeat: no-repeat;
-  background-size: 1690px;
+  background-size: 115%;
   background-position: bottom;
 }
 .content-2 .content {
@@ -203,7 +203,7 @@ header .content {
   padding-top: 15rem;
   background-image: url(./assets/line-2.svg);
   background-repeat: no-repeat;
-  background-size: 1690px;
+  background-size: 115%;
   background-position: top;
 }
 .content-4 h3 {
@@ -243,7 +243,7 @@ header .content {
   padding-top: 29rem;
   background-image: url(./assets/line-3.svg);
   background-repeat: no-repeat;
-  background-size: 1690px;
+  background-size: 115%;
   background-position: top;
 }
 .content-5 .content {
