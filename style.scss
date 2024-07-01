@@ -29,7 +29,7 @@
    src: url("./fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
 
-$background-lines-width: 1690px;
+$background-lines-width: 115%;
 $straight-line-color-1: #646464;
 $straight-line-color-2: #797979;
 $text-s: 1.05rem;
@@ -85,7 +85,7 @@ header {
       }
 
       #text-logo {
-         max-width: 330px;
+         max-width: 380px;
       }
    }
 
@@ -93,7 +93,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: end;
-      padding-top: 10rem;
+      padding-top: 8rem;
 
       .innovate-text {
          max-width: 900px;
