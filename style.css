@@ -314,6 +314,41 @@ header .content {
   margin-bottom: 5.25rem;
 }
 
+footer {
+  font-family: "Inter";
+  background-image: url(./assets/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: 15rem;
+  padding: 37.5rem 0 10rem;
+}
+footer .content-footer {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 0 0 0 7.5rem;
+}
+footer .content-footer .logo-wrap img.circle {
+  position: absolute;
+}
+footer .content-footer .logo-wrap img#text-logo {
+  max-width: 200px;
+}
+footer .content-footer address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: 3.5rem 0;
+}
+footer .content-footer address a {
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+}
+footer .content-footer p#datetime {
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   .content {
     padding: 0 3rem;
@@ -381,6 +416,13 @@ header .content {
   .responsive .content .service-list-responsive .service-item-responsive .service-img {
     max-height: 70px;
   }
+  footer {
+    background-size: 115%;
+    background-position-y: 20rem;
+  }
+  footer .content-footer {
+    padding: 0 3rem;
+  }
 }
 @media (max-width: 768px) {
   .content .logo-wrap img.circle {
@@ -417,6 +459,10 @@ header .content {
   }
   .content-4 .content p.text {
     font-size: 1rem;
+  }
+  footer {
+    background-size: 120%;
+    background-position-y: 28rem;
   }
 }
 @media (max-width: 549px) {
@@ -466,8 +512,19 @@ header .content {
   .responsive .content h3::after {
     height: 5rem;
   }
+  footer {
+    background-size: 180%;
+    background-position-y: 20rem;
+    padding: 30rem 0 5rem;
+  }
+  footer .content-footer {
+    padding: 0 1.5rem;
+  }
 }
 @media (max-width: 399px) {
+  header .content {
+    padding: 0 1.5rem;
+  }
   .content .logo-wrap img.circle {
     top: -10rem;
   }
