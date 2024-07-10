@@ -77,17 +77,20 @@ header {
       position: relative;
       display: flex;
       justify-content: center;
-      margin-top: 4rem;
+      overflow: hidden;
+      min-height: 365px;
 
       img.circle {
          position: absolute;
-         top: -42.5rem;
+         top: -23.5rem;
          z-index: -1;
-         max-width: 1000px;
+         max-width: 1300px;
       }
 
       #text-logo {
-         max-width: 380px;
+         max-width: 195px;
+         position: absolute;
+         top: 2%;
       }
    }
 
@@ -95,7 +98,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-top: 8rem;
+      margin-top: -4rem;
 
       .innovate-text {
          max-width: 900px;
@@ -373,13 +376,17 @@ header {
 }
 
 footer {
-   font-family: "Inter";
-   background-image: url(./assets/circle.svg);
+   font-family: LemonMilkLight;
+   letter-spacing: 0.15rem;
+   background-image: url(./assets/new-circle.png);
    background-repeat: no-repeat;
    background-size: 100%;
    background-position-x: center;
-   background-position-y: 15rem;
+   background-position-y: 45rem;
    padding: 37.5rem 0 10rem;
+   background-color: rgb(33 59 65 / 50%);
+   background-blend-mode: darken;
+   background-position-y: 46rem;
 
    .content-footer {
       max-width: 1280px;
@@ -503,8 +510,7 @@ footer {
    }
 
    footer {
-      background-size: 115%;
-      background-position-y: 20rem;
+      background-position-y: 55rem;
 
       .content-footer {
          padding: 0 3rem;
@@ -526,11 +532,12 @@ footer {
 @media (max-width: 768px) {
    .content {
       .logo-wrap img.circle {
-         top: -27rem;
+         top: -24rem;
       }
 
       .text-wrap {
          align-items: center;
+         margin-top: 0;
 
          .innovate-text {
             // max-width: 550px;
@@ -603,8 +610,8 @@ footer {
    }
 
    footer {
-      background-size: 120%;
-      background-position-y: 28rem;
+      // background-size: 120%;
+      // background-position-y: 28rem;
    }
 }
 
@@ -613,12 +620,16 @@ footer {
       padding: 0 1.5rem;
 
       .logo-wrap {
+         min-height: 245px;
+
          img.circle {
             top: -17rem;
+            max-width: 900px;
+            opacity: 0.76;
          }
 
          #text-logo {
-            max-width: 260px;
+            max-width: 160px;
          }
       }
 
@@ -674,9 +685,8 @@ footer {
    }
 
    footer {
-      background-size: 180%;
-      background-position-y: 20rem;
-      padding: 30rem 0 5rem;
+      background-position-y: 58rem;
+      background-size: 150%;
 
       .content-footer {
          padding: 0 1.5rem;
@@ -685,11 +695,11 @@ footer {
 }
 
 @media (max-width: 399px) {
-   header .content {
+   header .text-wrap {
       padding: 0 1.5rem;
    }
 
    .content .logo-wrap img.circle {
-      top: -10rem;
+      // top: -10rem;
    }
 }
