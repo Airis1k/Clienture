@@ -42,6 +42,15 @@ body {
   padding: 0;
 }
 
+header {
+  background-image: url(/assets/new-circle.png);
+  background-size: 1480px;
+  background-position-y: -26rem;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-color: rgba(33, 59, 65, 0.5);
+  background-blend-mode: darken;
+}
 header .content {
   height: 100%;
   display: flex;
@@ -63,13 +72,14 @@ header .content {
   min-height: 365px;
 }
 .content .logo-wrap img.circle {
+  display: none;
   position: absolute;
   top: -23.5rem;
   z-index: -1;
   max-width: 1300px;
 }
 .content .logo-wrap #text-logo {
-  max-width: 195px;
+  max-width: 230px;
   position: absolute;
   top: 2%;
 }
@@ -431,6 +441,10 @@ footer .content-footer p#datetime {
   }
 }
 @media (max-width: 768px) {
+  header {
+    background-size: 120%;
+    background-position-y: -11rem;
+  }
   .content .logo-wrap img.circle {
     top: -24rem;
   }
@@ -529,6 +543,9 @@ footer .content-footer p#datetime {
   }
 }
 @media (max-width: 399px) {
+  header {
+    background-position-y: -7rem;
+  }
   header .text-wrap {
     padding: 0 1.5rem;
   }

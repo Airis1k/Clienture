@@ -59,6 +59,14 @@ body {
 }
 
 header {
+   background-image: url(/assets/new-circle.png);
+   background-size: 1480px;
+   background-position-y: -26rem;
+   background-position-x: center;
+   background-repeat: no-repeat;
+   background-color: rgba(33, 59, 65, 0.5);
+   background-blend-mode: darken;
+
    .content {
       height: 100%;
       display: flex;
@@ -81,6 +89,7 @@ header {
       min-height: 365px;
 
       img.circle {
+         display: none;
          position: absolute;
          top: -23.5rem;
          z-index: -1;
@@ -88,7 +97,7 @@ header {
       }
 
       #text-logo {
-         max-width: 195px;
+         max-width: 230px;
          position: absolute;
          top: 2%;
       }
@@ -422,13 +431,6 @@ footer {
    }
 }
 
-// @media (max-width: 1999px) {
-//    .content-5 {
-//       padding-top: 35rem;
-//       top: -8rem;
-//    }
-// }
-
 @media (max-width: 1024px) {
    .content {
       padding: 0 3rem;
@@ -516,20 +518,14 @@ footer {
          padding: 0 3rem;
       }
    }
-
-   // .content-3 .content {
-   //    .service-text {
-   //       width: 30%;
-   //    }
-
-   //    .service-list {
-   //       width: 70%;
-   //       column-gap: 1.5rem;
-   //    }
-   // }
 }
 
 @media (max-width: 768px) {
+   header {
+      background-size: 120%;
+      background-position-y: -11rem;
+   }
+
    .content {
       .logo-wrap img.circle {
          top: -24rem;
@@ -540,7 +536,6 @@ footer {
          margin-top: 0;
 
          .innovate-text {
-            // max-width: 550px;
             display: none;
          }
 
@@ -576,42 +571,8 @@ footer {
       }
    }
 
-   // .content-3 .content {
-   //    flex-wrap: wrap;
-
-   //    .service-text {
-   //       width: 100%;
-   //       display: flex;
-   //       flex-direction: column;
-   //       align-items: center;
-
-   //       h3.main::after {
-   //          left: 5rem;
-   //       }
-
-   //       h3.lower:nth-of-type(3)::before,
-   //       h3.lower:nth-of-type(3)::after {
-   //          left: 6rem;
-   //       }
-   //    }
-
-   //    .service-list::before {
-   //       content: none;
-   //    }
-
-   //    .service-list {
-   //       width: 100%;
-   //       padding-top: 3rem;
-   //    }
-   // }
-
    .content-4 .content p.text {
       font-size: 1rem;
-   }
-
-   footer {
-      // background-size: 120%;
-      // background-position-y: 28rem;
    }
 }
 
@@ -695,11 +656,11 @@ footer {
 }
 
 @media (max-width: 399px) {
-   header .text-wrap {
-      padding: 0 1.5rem;
-   }
+   header {
+      background-position-y: -7rem;
 
-   .content .logo-wrap img.circle {
-      // top: -10rem;
+      .text-wrap {
+         padding: 0 1.5rem;
+      }
    }
 }
