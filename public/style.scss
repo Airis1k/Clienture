@@ -6,27 +6,27 @@
 
 @font-face {
    font-family: LemonMilkLight;
-   src: url("./fonts/LEMONMILK-Light.otf") format("opentype");
+   src: url("../fonts/LEMONMILK-Light.otf") format("opentype");
 }
 
 @font-face {
    font-family: LemonMilk;
-   src: url("./fonts/LEMONMILK-Regular.otf") format("opentype");
+   src: url("../fonts/LEMONMILK-Regular.otf") format("opentype");
 }
 
 @font-face {
    font-family: LemonMilkMedium;
-   src: url("./fonts/LEMONMILK-Medium.otf") format("opentype");
+   src: url("../fonts/LEMONMILK-Medium.otf") format("opentype");
 }
 
 @font-face {
    font-family: Cocogoose;
-   src: url("./fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+   src: url("../fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
 }
 
 @font-face {
    font-family: CocogooseLight;
-   src: url("./fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
+   src: url("../fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
 
 $background-lines-width-xl: 115%;
@@ -59,7 +59,7 @@ body {
 }
 
 header {
-   background-image: url(/assets/new-circle.png);
+   background-image: url(../assets/new-circle.png);
    background-size: 1480px;
    background-position-y: -26rem;
    background-position-x: center;
@@ -143,7 +143,7 @@ header {
    row-gap: 40px;
    padding: 25rem 0 8.5rem;
    position: relative;
-   background-image: url(./assets/line-1.svg);
+   background-image: url(../assets/line-1.svg);
    background-repeat: no-repeat;
    background-size: $background-lines-width-xl;
    background-position: bottom;
@@ -266,7 +266,7 @@ header {
 
 .content-4 {
    padding-top: 15rem;
-   background-image: url(./assets/line-2.svg);
+   background-image: url(../assets/line-2.svg);
    background-repeat: no-repeat;
    background-size: $background-lines-width-xl;
    background-position: top;
@@ -311,7 +311,7 @@ header {
 
 .content-5 {
    padding-top: 30%;
-   background-image: url(./assets/line-3.svg);
+   background-image: url(../assets/line-3.svg);
    background-repeat: no-repeat;
    background-size: $background-lines-width-xl;
    background-position-x: center;
@@ -347,11 +347,22 @@ header {
             row-gap: 0.687rem;
             width: 83%;
 
+            #name-error,
+            #email-error,
+            #phone-error,
+            #web-error,
+            #country-error,
+            #project-error {
+               color: #ff6262;
+               font-size: 12px;
+               margin: 0 0 0 1rem;
+            }
+
             .form-element {
                padding: 1em 4em;
                border-radius: 25px;
                border: 0;
-               font-family: "CocogooseLight";
+               font-family: "LemonMilkLight";
                background-color: #dcfffa;
             }
 
@@ -387,7 +398,7 @@ header {
 footer {
    font-family: LemonMilkLight;
    letter-spacing: 0.15rem;
-   background-image: url(./assets/new-circle.png);
+   background-image: url(../assets/new-circle.png);
    background-repeat: no-repeat;
    background-size: 100%;
    background-position-x: center;
@@ -458,7 +469,6 @@ footer {
 
       .content {
          flex-wrap: wrap;
-         // row-gap: 5rem;
 
          h3 {
             display: flex;
