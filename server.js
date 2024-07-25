@@ -39,7 +39,9 @@ async function sendMessage(data) {
 app.post("/", async (req, res) => {
    try {
       await sendMessage(req.body);
-      res.status(200).send({ message: "Email sent successfully!" });
+      res.status(200).send({
+         message: "Your information has been submitted successfully!",
+      });
    } catch (error) {
       console.error(error);
       res.status(500).send({ message: "Failed to sent email" });

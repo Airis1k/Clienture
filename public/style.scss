@@ -352,7 +352,8 @@ header {
             #phone-error,
             #web-error,
             #country-error,
-            #project-error {
+            #project-error,
+            #form-submit-error {
                color: #ff6262;
                font-size: 12px;
                margin: 0 0 0 1rem;
@@ -402,11 +403,10 @@ footer {
    background-repeat: no-repeat;
    background-size: 100%;
    background-position-x: center;
-   background-position-y: 45rem;
-   padding: 37.5rem 0 10rem;
+   background-position-y: 18rem;
+   padding: 10.5rem 0 10rem;
    background-color: rgb(33 59 65 / 50%);
    background-blend-mode: darken;
-   background-position-y: 46rem;
 
    .content-footer {
       max-width: 1280px;

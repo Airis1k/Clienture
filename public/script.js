@@ -121,13 +121,23 @@ async function sendData(formData) {
       });
 
       const message = await response.json();
-      if (response.ok) {
-         console.log(message.message);
-      } else {
-         console.error(message.message);
-      }
+      displayFormSubmitMessage(message.message);
    } catch (error) {
       console.error("Error sending data:", error);
+   }
+}
+
+function displayFormSubmitMessage(message) {
+   if (!document.getElementById("form-submit-error")) {
+      const error = document.createElement("p");
+      error.id = "form-submit-error";
+      error.textContent = message;
+      const form = document.querySelector("form");
+      form.append(error);
+
+      setTimeout(() => {
+         error.remove();
+      }, 5000);
    }
 }
 
