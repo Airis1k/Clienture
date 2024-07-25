@@ -40,6 +40,10 @@ $header-s: 1.17rem;
 $header-m: 2rem;
 $header-l: 3rem;
 
+html {
+   scroll-behavior: smooth;
+}
+
 .purple-btn {
    color: #fff;
    text-decoration: none;
@@ -522,7 +526,7 @@ footer {
    }
 
    footer {
-      background-position-y: 55rem;
+      background-position-y: 28rem;
 
       .content-footer {
          padding: 0 3rem;
@@ -656,7 +660,6 @@ footer {
    }
 
    footer {
-      background-position-y: 58rem;
       background-size: 150%;
 
       .content-footer {

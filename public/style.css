@@ -24,6 +24,10 @@
   font-family: CocogooseLight;
   src: url("./fonts/Cocogoose-Pro-Ultralight-trial.ttf") format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .purple-btn {
   color: #fff;
   text-decoration: none;
@@ -444,7 +448,7 @@ footer .content-footer p#datetime {
     max-height: 70px;
   }
   footer {
-    background-position-y: 55rem;
+    background-position-y: 28rem;
   }
   footer .content-footer {
     padding: 0 3rem;
@@ -545,7 +549,6 @@ footer .content-footer p#datetime {
     height: 5rem;
   }
   footer {
-    background-position-y: 58rem;
     background-size: 150%;
   }
   footer .content-footer {
