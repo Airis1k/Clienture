@@ -21,62 +21,29 @@ function validateForm() {
    const country = document.getElementById("country");
    const project = document.getElementById("project");
 
-   const emailRegExp =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+   const fields = [
+      { element: name, errorId: "name-error", validationFn: validateName },
+      { element: email, errorId: "email-error", validationFn: validateEmail },
+      { element: phone, errorId: "phone-error", validationFn: validatePhone },
+      { element: web, errorId: "web-error", validationFn: validateWeb },
+      { element: country, errorId: "country-error", validationFn: validateCountry },
+      { element: project, errorId: "project-error", validationFn: validateProject },
+   ];
+
+   fields.forEach((field) => {
+      field.element.addEventListener("input", () => {
+         field.validationFn(field.errorId, field.element, form);
+      });
+   });
 
    form.addEventListener("submit", (event) => {
       event.preventDefault();
       let validForm = true;
 
-      const nameError = "name-error";
-      if (name.value.length === 0) {
-         showError(nameError, name, "Invalid name");
-         validForm = false;
-      } else {
-         clearError(nameError, name, form);
-      }
-
-      const emailError = "email-error";
-      const isValidEmail =
-         email.value.length !== 0 && emailRegExp.test(email.value);
-      if (!isValidEmail) {
-         showError(emailError, email, "Invalid email");
-         validForm = false;
-      } else {
-         clearError(emailError, email, form);
-      }
-
-      const phoneError = "phone-error";
-      if (phone.value.length === 0) {
-         showError(phoneError, phone, "Invalid phone number");
-         validForm = false;
-      } else {
-         clearError(phoneError, phone, form);
-      }
-
-      const webError = "web-error";
-      if (web.value.length === 0) {
-         showError(webError, web, "Invalid web");
-         validForm = false;
-      } else {
-         clearError(webError, web, form);
-      }
-
-      const countryError = "country-error";
-      if (country.value.length === 0) {
-         showError(countryError, country, "Invalid country");
-         validForm = false;
-      } else {
-         clearError(countryError, country, form);
-      }
-
-      const projectError = "project-error";
-      if (project.value.length === 0) {
-         showError(projectError, project, "Invalid project text");
-         validForm = false;
-      } else {
-         clearError(projectError, project, form);
-      }
+      fields.forEach((field) => {
+         const isValid = field.validationFn(field.errorId, field.element, form);
+         if (!isValid) validForm = false;
+      });
 
       if (validForm) {
          sendData({
@@ -90,6 +57,68 @@ function validateForm() {
          form.reset();
       }
    });
+}
+
+function validateName(idName, element, form) {
+   if (element.value.length <= 3) {
+      showError(idName, element, "Invalid name");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
+}
+
+function validateEmail(idName, element, form) {
+   const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+   const isValidEmail = element.value.length !== 0 && emailRegExp.test(element.value);
+   if (!isValidEmail) {
+      showError(idName, element, "Invalid email");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
+}
+
+function validatePhone(idName, element, form) {
+   if (element.value.length <= 6) {
+      showError(idName, element, "Invalid phone number");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
+}
+
+function validateWeb(idName, element, form) {
+   if (element.value.length <= 4) {
+      showError(idName, element, "Invalid web");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
+}
+
+function validateCountry(idName, element, form) {
+   if (element.value.length <= 1) {
+      showError(idName, element, "Invalid country");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
+}
+
+function validateProject(idName, element, form) {
+   if (element.value.length <= 4) {
+      showError(idName, element, "Invalid project text");
+      return false;
+   } else {
+      clearError(idName, element, form);
+      return true;
+   }
 }
 
 function showError(idName, element, text) {
