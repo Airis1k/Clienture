@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
-import "dotenv/config";
+import { config } from "dotenv";
+config();
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -21,8 +22,8 @@ async function sendMessage(data) {
    });
 
    const info = await transporter.sendMail({
-      from: "clienture@gmail.com",
-      to: "clienture@gmail.com",
+      from: process.env.NAME,
+      to: process.env.NAME,
       subject: "Nauja zinute is kliento",
       text: `
             Name: ${data.name}\n
